@@ -39,6 +39,6 @@ This is meant to be deployed to GitHub Static Pages. Assuming that you
 have set this up as a git repo and you have added your GitHub remote to it,
 go ahead and run:
 
-    rake deploy
+    rake publish
 
 And that's it!
