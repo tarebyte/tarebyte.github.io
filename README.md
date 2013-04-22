@@ -6,7 +6,7 @@ This is my personal static makes my life easier webpage.
 
 ##Development
 
-#Technologies Used:
+###Technologies Used:
 
 * Project Building and Deployment
   * [Middleman](https://github.com/middleman/middleman)
