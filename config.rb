@@ -31,3 +31,8 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = "master"
+end

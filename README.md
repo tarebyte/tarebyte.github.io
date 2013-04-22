@@ -11,7 +11,7 @@ This is my personal static makes my life easier webpage.
 * Project Building and Deployment
   * [Middleman](https://github.com/middleman/middleman)
   * [Middleman Live Reload](https://github.com/middleman/middleman-livereload)
-  * [Middleman GitHub Pages](https://github.com/neo/middleman-gh-pages)
+  * [Middleman Deploy](https://github.com/tvaughan/middleman-deploy)
 * Templating and Styling
   * [HAML](http://haml.info/)
   * [SASS](http://sass-lang.com/)

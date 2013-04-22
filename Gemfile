@@ -2,6 +2,7 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
+gem "rake"
 gem "middleman", "~>3.0.13"
 gem "middleman-livereload"
-gem "middleman-gh-pages"
+gem "middleman-deploy", "~> 0.0.11"
