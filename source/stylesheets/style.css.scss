@@ -1,0 +1,93 @@
+/* style.css.scss */
+@import 'colors';
+@import 'fonts';
+
+body {
+  background-color: $FMO-blue;
+}
+
+a {
+  color: $FMO-orange;
+}
+
+section {
+  padding: 0;
+  height: 600px;
+}
+
+  #title {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    height: 400px;
+  }
+
+  .profile {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+    .profile img {
+      width: 190px;
+      width: 180px;
+      height: 180px;
+      border: 5px solid white;
+      border-radius: 15px;
+      -webkit-border-radus: 15px;
+      -moz-border-radius: 15px;
+    }
+
+    .profile p {
+      padding-left: 25px;
+      text-decoration: bold;
+      color: white;
+      font-family: 'Poiret One', cursive;
+      font-size: 2.5em;
+    }
+
+  #about {
+    background-color: $FMO-light-blue;
+  }
+
+  #contact {
+
+  }
+
+  #fun_facts {
+    background-color: $FMO-light-blue;
+
+  }
+
+  #projects {
+
+  }
+
+.tab{
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  text-align: center;
+  /* background-color: $FMO-blue; */
+  font-size: 2em;
+  font-family: 'Poiret One', cursive;
+  padding-bottom: 15px;
+  /* color: $FMO-light-blue; */
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-bottom-border-right-radius: 5px;
+  -moz-bottom-bottom-left-radius: 5px;
+}
+
+  #blue.tab {
+    background-color: $FMO-blue;
+    color: $FMO-light-blue;
+  }
+
+  #light-blue.tab {
+    background-color: $FMO-light-blue;
+    color: $FMO-blue;
+  }
+footer {
+
+}
