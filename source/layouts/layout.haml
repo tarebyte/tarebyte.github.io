@@ -5,6 +5,8 @@
     %title= data.page.title
     = stylesheet_link_tag "normalize.css"
     = stylesheet_link_tag "style.css"
+    = stylesheet_link_tag "Awesome/css/font-awesome.min.css"
     = javascript_include_tag "site.js"
+    %link{rel: "icon", type: "image/x-icon", href: "images/favicon.ico"}
   %body{:style => "zoom: 1;"}
     = yield
