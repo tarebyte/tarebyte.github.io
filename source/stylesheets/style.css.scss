@@ -4,18 +4,29 @@
 
 body {
   background-color: $FMO-blue;
+  font-family: 'Quicksand', sans-serif;
 }
 
-/* Content Sections */
 section {
   padding: 0;
-  height: 600px;
 }
+
+section.light_blue{
+  background-color: $FMO-light-blue;
+}
+
+section.small             { height: 300px; }
+section.medium            { height: 400px; }
+section.large             { height: 600px; }
+section.extra_large       { height: 800px; }
+section.extra_extra_large { height: 1000px; }
 
   #title {
     padding-top: 40px;
     padding-bottom: 25px;
     height: 400px;
+    background-image: url("/images/columbus-skyline_black_and_white.png");
+    background-position: 50% 60%;
   }
     .profile {
       width: 600px;
@@ -40,19 +51,26 @@ section {
       }
     }
 
-  #about {
-    background-color: $FMO-light-blue;
+.content {
+  display: block;
+  padding-top: 55px;
+  margin: 0 auto;
+  width: 650px;
+  font-size: 1.6em;
+  h1 {
+    padding-top: 40px;
+    text-align: center;
+    color: $FMO-blue;
   }
-
-  #contact {
+  a {
+    text-decoration: none;
+    color: $FMO-orange;
   }
-
-  #fun_facts {
-    background-color: $FMO-light-blue;
+  li {
+    padding-bottom: 20px;
   }
-
-  #projects {
-  }
+}
+  .content.light_blue { color: $FMO-light-blue; }
 
 /* Page Tabs */
 .tab{
@@ -60,7 +78,7 @@ section {
   margin-right: auto;
   width: 350px;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: 'Poiret One', cursive;
   padding-bottom: 15px;
   border-bottom-right-radius: 5px;
@@ -74,26 +92,33 @@ section {
     color: $FMO-light-blue;
   }
 
-  #light-blue.tab {
+  #light_blue.tab {
     background-color: $FMO-light-blue;
     color: $FMO-blue;
   }
 
+/* Links at the bottom of the page */
 .meta {
-  font-size: 7.5em;
-  padding-top: 75px;
+  padding: 70px 0;
   text-align: center;
   a {
+    font-size: 5.5em;
     text-decoration: none;
     color: $FMO-light-blue;
     transition: color 0.25s ease-in;
     -webkit-transition: color 0.25s ease-in;
-    -moz-transition: color 0.25s ease-in;
     &:hover {
       color: $FMO-orange;
     }
+    p {
+      font-size: 16px;
+    }
   }
   .block {
-    display:inline;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.3em;
+    width: 170px;
+    padding: 0 40px;
   }
 }
