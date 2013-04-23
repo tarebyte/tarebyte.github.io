@@ -6,10 +6,7 @@ body {
   background-color: $FMO-blue;
 }
 
-a {
-  color: $FMO-orange;
-}
-
+/* Content Sections */
 section {
   padding: 0;
   height: 600px;
@@ -20,30 +17,27 @@ section {
     padding-bottom: 25px;
     height: 400px;
   }
-
-  .profile {
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-    .profile img {
-      width: 190px;
-      width: 180px;
-      height: 180px;
-      border: 5px solid white;
-      border-radius: 15px;
-      -webkit-border-radus: 15px;
-      -moz-border-radius: 15px;
-    }
-
-    .profile p {
-      padding-left: 25px;
-      text-decoration: bold;
-      color: white;
-      font-family: 'Poiret One', cursive;
-      font-size: 2.5em;
+    .profile {
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      img {
+        width: 190px;
+        width: 180px;
+        height: 180px;
+        border: 5px solid white;
+        border-radius: 15px;
+        -webkit-border-radus: 15px;
+        -moz-border-radius: 15px;
+      }
+      p {
+        padding-left: 25px;
+        text-decoration: bold;
+        color: white;
+        font-family: 'Poiret One', cursive;
+        font-size: 2.5em;
+      }
     }
 
   #about {
@@ -51,28 +45,24 @@ section {
   }
 
   #contact {
-
   }
 
   #fun_facts {
     background-color: $FMO-light-blue;
-
   }
 
   #projects {
-
   }
 
+/* Page Tabs */
 .tab{
   margin-left: auto;
   margin-right: auto;
   width: 350px;
   text-align: center;
-  /* background-color: $FMO-blue; */
   font-size: 2em;
   font-family: 'Poiret One', cursive;
   padding-bottom: 15px;
-  /* color: $FMO-light-blue; */
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   -moz-bottom-border-right-radius: 5px;
@@ -88,6 +78,22 @@ section {
     background-color: $FMO-light-blue;
     color: $FMO-blue;
   }
-footer {
 
+.meta {
+  font-size: 7.5em;
+  padding-top: 75px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: $FMO-light-blue;
+    transition: color 0.25s ease-in;
+    -webkit-transition: color 0.25s ease-in;
+    -moz-transition: color 0.25s ease-in;
+    &:hover {
+      color: $FMO-orange;
+    }
+  }
+  .block {
+    display:inline;
+  }
 }
