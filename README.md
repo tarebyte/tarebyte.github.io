@@ -16,7 +16,7 @@ This is my personal static makes my life easier webpage.
   * [HAML](http://haml.info/)
   * [SASS](http://sass-lang.com/)
   * [Normalize.css](http://necolas.github.io/normalize.css/)
-
+  * [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 
 ##Getting Started
 
