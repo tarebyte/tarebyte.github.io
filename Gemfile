@@ -3,6 +3,6 @@
 source 'https://rubygems.org'
 
 gem "rake"
-gem "middleman", "~>3.0.13"
-gem "middleman-livereload"
-gem "middleman-deploy", "~> 0.0.11"
+gem "middleman", "~> 3.1.6"
+gem "middleman-livereload", "~> 3.1.0"
+gem "middleman-deploy", "~> 0.1.3"
