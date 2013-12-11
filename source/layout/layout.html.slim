@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title = current_page.data.title
+    meta name="description" content=""
+    meta name="viewport" content="width=device-width, initial-scale=1"
+
+    = stylesheet_link_tag 'app'
+
+  body
+
+    == yield
+
+    = javascript_include_tag 'app'
