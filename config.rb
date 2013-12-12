@@ -46,8 +46,8 @@ configure :build do
   activate :minify_html, remove_input_attributes: false
   activate :minify_css
   activate :minify_javascript
-  activate :image_optim
-  activate :gzip, exts: %w(.js .css .html .html .svg .ttf .otf .woff .eot)
+  # activate :imageoptim
+  # activate :gzip, exts: %w(.js .css .html .html .svg .ttf .otf .woff .eot)
 end
 
 # Deploy build to master branch

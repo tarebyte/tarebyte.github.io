@@ -4,3 +4,70 @@
 @import 'bourbon/bourbon';
 @import 'bitters/bitters';
 @import 'neat/neat';
+
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
+
+$visual-grid: true;
+
+body {
+	background: url('../images/brushed/brushed.png');
+	background-repeat: repeat;
+}
+
+header {
+	background: url('../images/header_photo_blue.png') no-repeat center top;
+	min-height: 720px;
+}
+
+nav {
+	a {
+		font-family: 'Yanone Kaffeesatz';
+		font-weight: 700;
+		font-size: 1.6em;
+		color: $light-gray;
+		text-align: center;
+
+		padding: 30px 0 1.5em 0;
+
+		@include span-columns(2);
+		@include omega(5n);
+		@include transition(color 0.1s linear);
+
+		&:first-child {
+			margin-left: 8.5%;
+		}
+		
+		&:hover {
+			color: $darker-gray;
+		}
+	}
+}
+
+#circle_photo {
+	width: 150px;
+	height: 150px;
+	@include border-radius(150px);
+	border: 5px solid $light-gray;
+	@include center-block;
+}
+
+#selfie {
+	margin-top: 5%;
+}
+
+.container {
+	@include outer-container;
+
+	width: 94%;
+	max-width: 1280px;
+	margin: auto;
+}
+
+
+.arrow {
+	@include triangle(50px, $table-dark-blue, down);
+	@include center-block;
+	z-index: 2;
+}
