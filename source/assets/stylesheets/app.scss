@@ -19,8 +19,19 @@ body {
 	background-repeat: repeat;
 }
 
+footer {
+	a {
+		color: #333;
+		&:hover {
+			color: #333;
+		}
+	}
+}
+
 header {
-	background: url('../images/header_photo_blue.png') no-repeat center top;
+	background: url('../images/header_photo_blue.png');
+	margin: auto;
+	max-width: 1280px;
 	min-height: 720px;
 }
 
@@ -48,6 +59,11 @@ nav {
 	}
 }
 
+#about {
+	background-color: $dark-blue;
+	min-height: 300px;
+}
+
 #circle_photo {
 	width: 150px;
 	height: 150px;
@@ -55,6 +71,11 @@ nav {
 	border: 5px solid $light-gray;
 	@include center-block;
 	margin-bottom: 20px;
+}
+
+#contact {
+	background-color: white;
+	min-height: 300px;
 }
 
 #selfie {
@@ -81,6 +102,18 @@ nav {
 	}
 }
 
+#work {
+	background-color: white;
+	min-height: 180px;
+	h1 {
+		color: #333;
+		text-align: center;
+		font-family: 'Tangerine';
+		font-size: 60px;
+		font-weight: 700;
+	}
+}
+
 .arrow {
 	@include triangle(50px, $table-dark-blue, down);
 	@include center-block;
@@ -91,7 +124,6 @@ nav {
 	@include outer-container;
 	margin: auto;
 	max-width: 1280px;
-	width: 94%;
 }
 
 .social {
