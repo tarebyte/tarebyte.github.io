@@ -1,0 +1,126 @@
+//= require normalize-css/normalize
+//= require ss-social-regular
+//= require _erb/_syntax
+
+@import bourbon/bourbon
+@import bitters/bitters
+@import neat/neat
+
+@import animations
+@import colors
+@import fonts
+@import mixins
+
+body
+	font-family: 'Cardo', serif
+	font-weight: 400
+	background: url('../images/brushed/brushed.png')
+	background-repeat: repeat
+	+animation(fade-in 2.5s)
+
+footer
+	a
+		color: #333
+		&:hover
+			color: #333
+
+header
+	background: url('../images/header_photo_blue.png')
+	margin: auto
+	max-width: 1280px
+	min-height: 720px
+
+nav
+	+animation(dropFifty 1.5s)
+	a
+		font-family: 'Yanone Kaffeesatz'
+		font-weight: 700
+		font-size: 1.6em
+		color: $light-gray
+		text-align: center
+
+		padding: 30px 0 1.5em 0
+
+		+span-columns(2)
+		+omega(5n)
+		+transition(color 0.1s linear)
+
+		&:first-child
+			margin-left: 8.5%
+
+		
+		&:hover
+			color: $light-gray-darkened
+
+#about
+	background-color: $dark-blue
+	min-height: 300px
+
+
+#circle_photo
+	width: 150px
+	height: 150px
+	border: 5px solid $light-gray
+	margin-bottom: 20px
+	+animation(upTwenty 1.5s)
+	+border-radius(150px)
+	+center-block
+
+#contact
+	background-color: white
+	min-height: 300px
+
+#selfie
+	margin-top: 2%
+
+	h1
+		+animation(upFifty 1.5s)
+		color: $light-gray
+		font-family: 'Yanone Kaffeesatz'
+		font-size: 60px
+		font-weight: 700
+		letter-spacing: 3px
+		text-align: center
+		margin-bottom: 8px
+
+	p
+		+animation(upFifty 1.5s)
+		color: $light-gray
+		font-family: 'Yanone Kaffeesatz'
+		font-size: 26px
+		letter-spacing: .6px
+		text-align: center
+		margin-bottom: 2em
+
+#work
+	background-color: white
+	min-height: 180px
+	h1
+		color: #333
+		text-align: center
+		font-family: 'Tangerine'
+		font-size: 60px
+		font-weight: 700
+
+.arrow
+	+triangle(50px, $table-dark-blue, down)
+	+center-block
+	z-index: 2
+
+.container
+	+outer-container
+	margin: auto
+	max-width: 1280px
+
+.social
+	text-align: center
+	+animation(upFifty 1.9s)
+	
+	a
+		margin-left: 4.8%
+		margin-right: 4.8%
+		font-size: 30px
+		color: $light-gray-darkened
+		+transition(color 0.1s linear)
+		&:hover
+			color: $dark-gray
