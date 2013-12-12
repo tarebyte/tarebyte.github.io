@@ -1,4 +1,5 @@
 //= require normalize-css/normalize
+//= require ss-social-regular
 //= require _erb/_syntax
 
 @import 'bourbon/bourbon';
@@ -12,6 +13,8 @@
 $visual-grid: true;
 
 body {
+	font-family: 'Cardo', serif;
+	font-weight: 400;
 	background: url('../images/brushed/brushed.png');
 	background-repeat: repeat;
 }
@@ -40,7 +43,7 @@ nav {
 		}
 		
 		&:hover {
-			color: $darker-gray;
+			color: $light-gray-darkened;
 		}
 	}
 }
@@ -51,23 +54,56 @@ nav {
 	@include border-radius(150px);
 	border: 5px solid $light-gray;
 	@include center-block;
+	margin-bottom: 20px;
 }
 
 #selfie {
-	margin-top: 5%;
+	margin-top: 2%;
+
+	h1 {
+		color: $light-gray;
+		font-family: 'Yanone Kaffeesatz';
+		font-size: 60px;
+		font-weight: 700;
+		letter-spacing: 3px;
+		text-align: center;
+		margin-bottom: 8px;
+
+	}
+
+	p {
+		color: $light-gray;
+		font-family: 'Yanone Kaffeesatz';
+		font-size: 26px;
+		letter-spacing: .6px;
+		text-align: center;
+		margin-bottom: 2em;
+	}
 }
-
-.container {
-	@include outer-container;
-
-	width: 94%;
-	max-width: 1280px;
-	margin: auto;
-}
-
 
 .arrow {
 	@include triangle(50px, $table-dark-blue, down);
 	@include center-block;
 	z-index: 2;
+}
+
+.container {
+	@include outer-container;
+	margin: auto;
+	max-width: 1280px;
+	width: 94%;
+}
+
+.social {
+	text-align: center;
+	a {
+		margin-left: 4.8%;
+		margin-right: 4.8%;
+		font-size: 30px;
+		color: $light-gray-darkened;
+		@include transition(color 0.1s linear);
+		&:hover {
+			color: $dark-gray;
+		}
+	}
 }
