@@ -1,4 +1,4 @@
-# tarebyte.github.io
+# My Personal Site
 
 ##Description
 
@@ -10,13 +10,17 @@ This is my personal static makes my life easier webpage.
 
 * Project Building and Deployment
   * [Middleman](https://github.com/middleman/middleman)
-  * [Middleman Live Reload](https://github.com/middleman/middleman-livereload)
+  * [Middleman Blog](https://github.com/middleman/middleman-blog)
   * [Middleman Deploy](https://github.com/tvaughan/middleman-deploy)
+  * [Middleman Live Reload](https://github.com/middleman/middleman-livereload)
 * Templating and Styling
-  * [HAML](http://haml.info/)
-  * [SASS](http://sass-lang.com/)
   * [Normalize.css](http://necolas.github.io/normalize.css/)
-  * [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+  * [SLIM](http://slim-lang.com)
+  * [SASS](http://sass-lang.com/)
+  * [Thoughtbot's](http://thoughtbot.com/)
+    * [Bitters](http://bitters.bourbon.io/)
+    * [Bourbon](http://bourbon.io/)
+    * [Neat](http://neat.bourbon.io/)
 
 ##Getting Started
 
