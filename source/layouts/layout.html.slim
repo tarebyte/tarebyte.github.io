@@ -5,7 +5,7 @@ html
     title = current_page.data.title
     meta name="description" content="My Personal Site"
     meta name="author"      content="Mark Tareshawty"
-    meta name="viewport"    content="width=device-width, initial-scale=1"
+    meta name="viewport"    content="width=device-width, initial-scale=1, minimal-ui"
     = stylesheet_link_tag 'app'
 
   body
@@ -17,3 +17,4 @@ html
     = partial "partials/footer"
 
     = javascript_include_tag 'app'
+    = partial "partials/_google_analytics"
