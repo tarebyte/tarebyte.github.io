@@ -92,7 +92,12 @@ nav
   +center-block
 
 #selfie
-  margin-top: 70px
+  @media (min-width: 486px)
+    margin-top: 70px
+
+  @media (max-width: 485px)
+    margin-top: 40px
+
   text-align: center
   font-family: 'Yanone Kaffeesatz'
   color: $light-gray
@@ -139,7 +144,7 @@ nav
       margin-bottom: 30px
 
     @media (max-width: 485px)
-      margin-left: 23%
+      margin-left: 18%
       margin-bottom: 15px
 
   .dates
