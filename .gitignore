@@ -13,5 +13,5 @@
 # Ignore Sass' cache
 /.sass-cache
 
-# Images
-source/images/columbus-skyline.jpg
+# Photoshop Files
+/source/assets/images/psd/*
