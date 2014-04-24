@@ -1,13 +1,14 @@
-# Some settings borrowed from http://github.com/shkm/middleman-neato
-
-# Meta Data
 set :meta, {
   title: 'Welcome Back',
   url:   'http://tarebyte.github.io'
 }
 
-# Syntax Highlighting
 activate :syntax
+activate :syntax, :line_numbers => true
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
 set :syntax_theme, Rouge::Themes::Base16
 
 # Asset Directories
@@ -18,12 +19,10 @@ set :font_fir,     'assets/fonts'
 set :partials_dir, 'partials'
 
 after_configuration do
-  # Adding Bower to asset path
   @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
-# Da Blog
 activate :blog do |blog|
   blog.prefix            = 'blog'
   blog.permalink         = '{year}/title.html'
@@ -33,10 +32,6 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 10
 end
-
-# configure :development do
-#   activate :livereload, apply_js_live: false, apply_css_live: false
-# end
 
 configure :build do
   activate :relative_assets

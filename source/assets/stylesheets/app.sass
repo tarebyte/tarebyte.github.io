@@ -22,9 +22,33 @@ body
 section
   +fill-parent
   margin: auto
+  padding-bottom: 20px
+  min-height: 180px
+
+  h1
+    padding-bottom: 15px
+  p
+    font-size: 22px
+
+.arrow
+  +center-block
+  z-index: 2
+
+section.white
+  background-color: white
+  .arrow
+    +triangle(50px, $dark-blue, down)
+
+section.blue
+  color: white
+  background-color: $dark-blue
+  .arrow
+    +triangle(50px, white, down)
 
 .container
   +outer-container
+  @media (max-width: 1090px)
+    padding: 0 10px
 
 header
   +fill-parent
@@ -33,6 +57,8 @@ header
   min-height: 720px
 
 footer
+  padding-top: 10px
+  text-align: center
   a
     color: #333
     &:hover
@@ -49,17 +75,12 @@ nav
 
     padding: 30px 0 1.5em 0
 
-    +span-columns(2.4)
-    +omega(5n)
+    +span-columns(3)
+    +omega(4n)
     +transition(color 0.1s linear)
 
     &:hover
       color: $light-gray-darkened
-
-#about
-  background-color: $dark-blue
-  min-height: 300px
-
 
 #circle_photo
   width: 150px
@@ -70,59 +91,26 @@ nav
   +border-radius(150px)
   +center-block
 
-#contact
-  background-color: white
-  min-height: 300px
-
 #selfie
-  margin-top: 2%
+  margin-top: 70px
+  text-align: center
+  font-family: 'Yanone Kaffeesatz'
+  color: $light-gray
 
   h1
     +animation(upFifty 1.5s)
-    color: $light-gray
     font-family: 'Yanone Kaffeesatz'
     font-size: 60px
     font-weight: 700
     letter-spacing: 3px
-    text-align: center
     margin-bottom: 8px
 
   p
     +animation(upFifty 1.5s)
     color: $light-gray
-    font-family: 'Yanone Kaffeesatz'
     font-size: 26px
     letter-spacing: .6px
-    text-align: center
     margin-bottom: 2em
-
-#work
-  background-color: white
-  min-height: 180px
-  h1
-    color: #333
-    text-align: center
-    font-family: 'Tangerine'
-    font-size: 60px
-    font-weight: 700
-
-.white-arrow
-  +triangle(50px, white, down)
-  +center-block
-  z-index: 2
-
-.blue-arrow
-  +triangle(50px, $dark-blue, down)
-  +center-block
-  z-index: 2
-
-
-.iMac
-  width: 480px
-.project
-  +center-block
-  background-color: pink
-  max-width: 94%
 
 .social
   text-align: center
@@ -136,3 +124,45 @@ nav
     +transition(color 0.1s linear)
     &:hover
       color: $dark-gray
+
+.job
+  @media (min-width: 486px)
+    margin: 5% 0
+
+  @media (max-width: 485px)
+    margin-bottom: 10%
+    margin-top: 5%
+
+  img
+    width: 204px
+    @media (min-width: 486px)
+      margin-bottom: 30px
+
+    @media (max-width: 485px)
+      margin-left: 23%
+      margin-bottom: 15px
+
+  .dates
+    @media (min-width: 486px)
+      float: right
+      margin-top: 28px
+
+    @media (max-width: 485px)
+      text-align: center
+      padding-bottom: 10px
+
+  li
+    font-size: 20px
+
+.description
+  background-color: lighten($dark-blue, 5%)
+  padding: 10px
+  border-radius: 5px
+
+.position
+  font-weight: bold
+
+#contact
+  h1
+    text-align: center
+    margin-top: 2%

@@ -2,9 +2,6 @@ source 'https://rubygems.org'
 ruby '2.1.1'
 
 gem 'bitters'
-gem 'neat'
-gem 'rake'
-gem 'slim'
 
 gem 'middleman'
 gem 'middleman-blog'
@@ -13,3 +10,10 @@ gem 'middleman-imageoptim'
 gem 'middleman-livereload'
 gem 'middleman-minify-html'
 gem 'middleman-syntax'
+
+gem 'neat'
+
+gem 'rake'
+gem 'redcarpet'
+
+gem 'slim'
