@@ -19,17 +19,24 @@ body
   +transform(translate3d(0,0,0))
   +animation(fade-in 3s)
 
+section
+  +fill-parent
+  margin: auto
+
+.container
+  +outer-container
+
+header
+  +fill-parent
+  background: url('../images/header_photo_blue.png')
+  margin: auto
+  min-height: 720px
+
 footer
   a
     color: #333
     &:hover
       color: #333
-
-header
-  background: url('../images/header_photo_blue.png')
-  margin: auto
-  max-width: 1280px
-  min-height: 720px
 
 nav
   +animation(dropFifty 1.5s)
@@ -42,13 +49,9 @@ nav
 
     padding: 30px 0 1.5em 0
 
-    +span-columns(2)
+    +span-columns(2.4)
     +omega(5n)
     +transition(color 0.1s linear)
-
-    &:first-child
-      margin-left: 8.5%
-
 
     &:hover
       color: $light-gray-darkened
@@ -103,15 +106,16 @@ nav
     font-size: 60px
     font-weight: 700
 
-.arrow
-  +triangle(50px, $table-dark-blue, down)
+.white-arrow
+  +triangle(50px, white, down)
   +center-block
   z-index: 2
 
-.container
-  +outer-container
-  margin: auto
-  max-width: 1280px
+.blue-arrow
+  +triangle(50px, $dark-blue, down)
+  +center-block
+  z-index: 2
+
 
 .iMac
   width: 480px

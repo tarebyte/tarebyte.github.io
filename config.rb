@@ -34,9 +34,9 @@ activate :blog do |blog|
   blog.per_page = 10
 end
 
-configure :development do
-  activate :livereload, apply_js_live: false, apply_css_live: false
-end
+# configure :development do
+#   activate :livereload, apply_js_live: false, apply_css_live: false
+# end
 
 configure :build do
   activate :relative_assets
