@@ -7,6 +7,7 @@ html
     meta name="author"      content="Mark Tareshawty"
     meta name="viewport"    content="width=device-width, initial-scale=1, minimal-ui"
     = stylesheet_link_tag 'app'
+    = partial "partials/google_analytics"
 
   body
     = partial "partials/header"
@@ -16,4 +17,3 @@ html
     = partial "partials/footer"
 
     = javascript_include_tag 'app'
-    = partial "partials/_google_analytics"
