@@ -1,0 +1,50 @@
+body {
+  // font-family: 'AvenirNext-Bold';
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  color: #333;
+}
+
+a {
+  color: #307EA9;
+  text-decoration: none;
+}
+
+footer {
+  @include outer-container;
+}
+
+header {
+  @include outer-container;
+  padding: 75px 0 25px;
+
+  a, b { color: #333; }
+
+  section {
+    @include span-columns(6);
+    margin: 0;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  @include span-columns(6);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-top: 6px;
+  margin: 0;
+
+  li {
+    float: right;
+    padding-left: 15px;
+    display: inline;
+  }
+}
+
+.name a {
+  font-size: 30px;
+  text-transform: uppercase;
+}
