@@ -1,5 +1,4 @@
 body {
-  // font-family: 'AvenirNext-Bold';
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   line-height: 1;
   color: #333;
@@ -18,10 +17,17 @@ header {
   @include outer-container;
   padding: 75px 0 25px;
 
-  a, b { color: #333; }
+  a, b {
+    color: #333;
+
+    &:hover {
+      color: #307EA9;
+      @include transition(color 0.25s ease-in);
+    }
+  }
 
   section {
-    @include span-columns(6);
+    @include span-columns(5);
     margin: 0;
   }
 }
@@ -30,17 +36,53 @@ ul {
   list-style: none;
 }
 
+.container {
+  @include outer-container;
+}
+
+.hero {
+  background-color: #333;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  height: 200px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.listing {
+  padding: 0;
+
+  a {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 12px;
+    float: right;
+    text-transform: uppercase;
+    padding-top: 2px;
+    color: #999;
+  }
+}
+
 .menu {
-  @include span-columns(6);
+  @include span-columns(7);
+  font-family: 'AvenirNext-Bold';
   font-size: 14px;
+
   text-transform: uppercase;
-  padding-top: 6px;
+
   margin: 0;
+  padding-top: 8px;
 
   li {
-    float: right;
-    padding-left: 15px;
     display: inline;
+    float: right;
+
+    &:nth-child(n+1) {
+      padding-left: 15px;
+    }
   }
 }
 

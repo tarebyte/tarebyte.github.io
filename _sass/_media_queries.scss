@@ -1,0 +1,26 @@
+header {
+  @include media($mobile) {
+    padding: 25px 0 15px;
+  }
+
+  section {
+    @include media($mobile) {
+      @include span-columns(4);
+      padding-left: 15px;
+    }
+  }
+}
+
+.hero {
+  @include media($mobile) {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+}
+
+.menu {
+  @include media($mobile) {
+    @include span-columns(4);
+    padding: 15px 15px 0;
+  }
+}
