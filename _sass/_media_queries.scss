@@ -11,6 +11,12 @@ header {
   }
 }
 
+.container {
+  @include media($mobile) {
+    padding: 0 15px;
+  }
+}
+
 .hero {
   @include media($mobile) {
     height: 150px;
