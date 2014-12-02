@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   line-height: 1;
@@ -11,6 +15,13 @@ a {
 
 footer {
   @include outer-container;
+  border-top: 1px solid #e0e0e0;
+  height: 100px;
+  margin-top: 150px;
+
+  div.container {
+    padding-top: 25px;
+  }
 }
 
 header {
@@ -38,6 +49,18 @@ ul {
 
 .container {
   @include outer-container;
+}
+
+.content-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -5em;
+}
+
+.content-wrapper:after {
+  content: "";
+  display: block;
 }
 
 .hero {
@@ -89,4 +112,22 @@ ul {
 .name a {
   font-size: 30px;
   text-transform: uppercase;
+}
+
+.ss {
+  float: right;
+
+  a {
+    color: #333;
+    font-size: 30px;
+
+    &:not(:last-child) {
+      padding-right: 10px;
+    }
+
+    &:hover {
+      color: #307EA9;
+      @include transition(color 0.25s ease-in);
+    }
+  }
 }
