@@ -43,6 +43,18 @@ header {
   }
 }
 
+p > code {
+  background-color: #efefef;
+  padding: 0 3px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+pre {
+  padding: 10px;
+  font-size: 14px;
+}
+
 ul {
   list-style: none;
 }
@@ -71,6 +83,10 @@ ul {
   height: 200px;
   margin-bottom: 40px;
   width: 100%;
+}
+
+.highlight {
+  border-radius: 3px;
 }
 
 .listing {
@@ -112,6 +128,11 @@ ul {
 .name a {
   font-size: 30px;
   text-transform: uppercase;
+}
+
+.post-content {
+  line-height: 1.5;
+  font-size: 20px;
 }
 
 .ss {
