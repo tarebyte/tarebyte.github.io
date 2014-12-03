@@ -9,5 +9,5 @@ bundle install
 jeykll server
 ```
 
-# A moment of thanks
+## A moment of thanks
 I'd like to thank [Zach Holman](https://github.com/holman), I borrowed the look of [his site](http://zachholman.com), but this code is all of my own.

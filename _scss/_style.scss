@@ -3,14 +3,25 @@ html, body {
 }
 
 body {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: $regular;
   line-height: 1;
-  color: #333;
+  color: $black;
 }
 
 a {
-  color: #307EA9;
+  @include transition(color 0.25s ease-in);
+
+  color: $link;
   text-decoration: none;
+
+  &:hover {
+    color: darken($link, 10%);
+    @include transition(color 0.25s ease-in);
+  }
+}
+
+b {
+  font-family: $demi-bold;
 }
 
 footer {
@@ -28,12 +39,11 @@ header {
   @include outer-container;
   padding: 75px 0 25px;
 
-  a, b {
-    color: #333;
+  a {
+    color: black;
 
     &:hover {
-      color: #307EA9;
-      @include transition(color 0.25s ease-in);
+      color: $link;
     }
   }
 
@@ -61,6 +71,7 @@ ul {
 
 .container {
   @include outer-container;
+
 }
 
 .content-wrapper {
@@ -75,8 +86,14 @@ ul {
   display: block;
 }
 
+.content {
+  a:hover {
+    color: lighten($link, 15%);
+  }
+}
+
 .hero {
-  background-color: #333;
+  background-color: $black;
   background-size: cover;
   background-position: 50% 50%;
 
@@ -107,7 +124,7 @@ ul {
 
 .menu {
   @include span-columns(7);
-  font-family: 'AvenirNext-Bold';
+  font-family: $bold;
   font-size: 14px;
 
   text-transform: uppercase;
@@ -139,7 +156,7 @@ ul {
   float: right;
 
   a {
-    color: #333;
+    color: $black;
     font-size: 30px;
 
     &:not(:last-child) {
@@ -147,7 +164,7 @@ ul {
     }
 
     &:hover {
-      color: #307EA9;
+      color: $link;
       @include transition(color 0.25s ease-in);
     }
   }
