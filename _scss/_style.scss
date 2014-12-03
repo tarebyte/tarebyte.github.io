@@ -20,10 +20,6 @@ a {
   }
 }
 
-b {
-  @include bold-text;
-}
-
 footer {
   @include outer-container;
   border-top: 1px solid #e0e0e0;
@@ -33,6 +29,10 @@ footer {
   div.container {
     padding-top: 25px;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include extra-bold-text;
 }
 
 header {
@@ -53,7 +53,7 @@ header {
   }
 }
 
-p > code {
+p code {
   background-color: #efefef;
   padding: 0 3px;
   border-radius: 3px;
@@ -92,6 +92,12 @@ ul {
   }
 }
 
+.date {
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 .hero {
   background-color: $black;
   background-size: cover;
@@ -114,11 +120,8 @@ ul {
   }
 
   span {
-    font-size: 12px;
     float: right;
-    text-transform: uppercase;
     padding-top: 4px;
-    color: #999;
   }
 }
 
@@ -151,6 +154,10 @@ ul {
 .post-content {
   line-height: 1.5;
   font-size: 20px;
+}
+
+.post-title h1 {
+  margin-bottom: 0.25em;
 }
 
 .ss {

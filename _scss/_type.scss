@@ -1,5 +1,5 @@
 @import "lib/ss-social-circle";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
 
 @mixin light-text {
   font: {
@@ -26,5 +26,12 @@
   font: {
     family: 'Open Sans', sans-serif;
     weight: 700;
+  }
+}
+
+@mixin extra-bold-text {
+  font: {
+    family: 'Open Sans', sans-serif;
+    weight: 800;
   }
 }
