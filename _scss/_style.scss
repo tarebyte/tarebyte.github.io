@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;;
+  @include regular-text;
   line-height: 1;
   color: $black;
 }
@@ -16,13 +16,12 @@ a {
 
   &:hover {
     color: darken($link, 10%);
-    @include transition(color 0.25s ease-in);
+    @include transition(all 0.25s ease-in);
   }
 }
 
 b {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  @include bold-text;
 }
 
 footer {
@@ -118,15 +117,14 @@ ul {
     font-size: 12px;
     float: right;
     text-transform: uppercase;
-    padding-top: 2px;
+    padding-top: 4px;
     color: #999;
   }
 }
 
 .menu {
   @include span-columns(7);
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
+  @include bold-text;
   font-size: 14px;
 
   text-transform: uppercase;
@@ -147,8 +145,7 @@ ul {
 .name a {
   font-size: 30px;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  @include light-text;
 }
 
 .post-content {
