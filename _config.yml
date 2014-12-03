@@ -15,4 +15,4 @@ permalink: /posts/:title/
 markdown: kramdown
 sass:
   sass_dir: _scss
-  style: compressed
+  # style: compressed
