@@ -1,7 +1,3 @@
-html, body {
-  height: 100%;
-}
-
 body {
   @include regular-text;
 
@@ -74,18 +70,6 @@ header {
 
 .container {
   @include outer-container;
-}
-
-.content-wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -5em;
-}
-
-.content-wrapper:after {
-  content: "";
-  display: block;
 }
 
 .posts {
