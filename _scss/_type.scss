@@ -1,0 +1,38 @@
+@import "lib/ss-social-circle";
+@import "lib/ss-social-regular";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+
+@mixin light-text {
+  font: {
+    family: 'Open Sans', sans-serif;
+    weight: 300;
+  }
+}
+
+@mixin regular-text {
+  font: {
+    family: 'Open Sans', sans-serif;
+    weight: 400;
+  }
+}
+
+@mixin semi-bold-text {
+  font: {
+    family: 'Open Sans', sans-serif;
+    weight: 600;
+  }
+}
+
+@mixin bold-text {
+  font: {
+    family: 'Open Sans', sans-serif;
+    weight: 700;
+  }
+}
+
+@mixin extra-bold-text {
+  font: {
+    family: 'Open Sans', sans-serif;
+    weight: 800;
+  }
+}

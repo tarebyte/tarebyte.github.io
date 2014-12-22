@@ -1,0 +1,27 @@
+header {
+  @include media($tablet) {
+    margin: 15% 0 25%;
+
+    ul {
+      @include span-columns(4);
+      @include shift(2);
+
+      li{
+        padding: 0 5%;
+      }
+    }
+  }
+
+  @include media($mobile) {
+    margin: 15% 0 35%;
+
+    ul {
+      @include span-columns(4);
+      @include shift(0);
+
+      li{
+        padding: 0 4.5%;
+      }
+    }
+  }
+}
