@@ -1,0 +1,15 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  @include regular-text;
+
+  line-height: 1;
+  color: $black;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+}
