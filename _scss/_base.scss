@@ -1,23 +1,15 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
 @charset "utf-8";
 
 @import "lib/normalize";
 @import "lib/bourbon/bourbon";
 
 /*== Use in development only! ==*/
-// @import 'visual_grid';
+// @import 'visual-grid';
 /*==============================*/
 
 @import "grid-settings";
 @import "lib/neat/neat";
 
-@import "type";
+@import "animations";
 @import "colors";
-
-@import "style";
-
-@import "media_queries";
-
-@import "lib/syntax-highlighting";
+@import "type";
