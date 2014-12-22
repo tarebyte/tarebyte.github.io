@@ -5,8 +5,11 @@ description: >
   This is the corner of the Internet that contains Mark Tareshawty's musings
   and semi-tolerable jokes.
 url: "http://marktareshawty.com/" # the base hostname & protocol for your site
-twitter_username: tarebyte
-github_username:  tarebyte
+github_url:  https://github.com/tarebyte
+flickr_url: https://www.flickr.com/photos/127517383@N06/
+instagram_url: http://instagram.com/tarebyte/
+twitter_url: https://twitter.com/tarebyte
+
 email_address: me@marktareshawty.com
 
 permalink: /posts/:title/

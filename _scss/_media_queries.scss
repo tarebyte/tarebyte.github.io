@@ -1,32 +1,9 @@
 header {
-  @include media($mobile) {
-    padding: 25px 0 15px;
+  @include media($tablet) {
+    margin: 15% 0 25%;
   }
 
-  section {
-    @include media($mobile) {
-      @include span-columns(4);
-      padding-left: 15px;
-    }
-  }
-}
-
-.container {
   @include media($mobile) {
-    padding: 0 15px;
-  }
-}
-
-.hero {
-  @include media($mobile) {
-    height: 150px;
-    margin-bottom: 20px;
-  }
-}
-
-.menu {
-  @include media($mobile) {
-    @include span-columns(4);
-    padding: 15px 15px 0;
+    margin: 15% 0 35%;
   }
 }

@@ -9,69 +9,59 @@ body {
 }
 
 a {
-  @include transition(color 0.25s ease-in);
-
   color: $link;
   text-decoration: none;
-
-  &:hover {
-    color: darken($link, 10%);
-    @include transition(all 0.25s ease-in);
-  }
 }
 
 footer {
-  @include outer-container;
-  border-top: 1px solid #e0e0e0;
-  height: 100px;
-  margin-top: 150px;
+  border-top: 1px solid #EEE;
 
-  div.container {
-    padding-top: 25px;
+  p {
+    @include semi-bold-text;
+
+    font-size: 12px;
+    padding-top: 20px;
+    text-align: center;
   }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  @include extra-bold-text;
 }
 
 header {
-  @include outer-container;
-  padding: 75px 0 25px;
+  text-align: center;
+  color: $black;
+  margin: 15% 0 10%;
 
-  a {
-    color: black;
+  h1 {
+    @include light-text;
+  }
 
-    &:hover {
-      color: $link;
+  ul {
+    @include span-columns(6);
+    @include shift(3);
+
+    font-size: 26px;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      padding: 0 2%;
+      text-align: center;
+      display: inline;
+
+      a {
+        @include transition(color 0.25s ease-in);
+        color: $gray;
+
+        &:hover {
+          color: $link;
+          @include transition(all 0.25s ease-in);
+        }
+      }
     }
   }
-
-  section {
-    @include span-columns(5);
-    margin: 0;
-  }
-}
-
-p code {
-  background-color: #efefef;
-  padding: 0 3px;
-  border-radius: 3px;
-  font-size: 16px;
-}
-
-pre {
-  padding: 10px;
-  font-size: 14px;
-}
-
-ul {
-  list-style: none;
 }
 
 .container {
   @include outer-container;
-
 }
 
 .content-wrapper {
@@ -86,94 +76,7 @@ ul {
   display: block;
 }
 
-.content {
-  a:hover {
-    color: lighten($link, 15%);
-  }
-}
-
-.date {
-  color: #999;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.hero {
-  background-color: $black;
-  background-size: cover;
-  background-position: 50% 50%;
-
-  height: 200px;
-  margin-bottom: 40px;
-  width: 100%;
-}
-
-.highlight {
-  border-radius: 3px;
-}
-
-.listing {
-  padding: 0;
-
-  a {
-    font-size: 18px;
-  }
-
-  span {
-    float: right;
-    padding-top: 4px;
-  }
-}
-
-.menu {
-  @include span-columns(7);
-  @include bold-text;
-  font-size: 14px;
-
-  text-transform: uppercase;
-
-  margin: 0;
-  padding-top: 8px;
-
-  li {
-    display: inline;
-    float: right;
-
-    &:nth-child(n+1) {
-      padding-left: 15px;
-    }
-  }
-}
-
-.name a {
-  font-size: 30px;
-  text-transform: uppercase;
-  @include light-text;
-}
-
-.post-content {
-  line-height: 1.5;
-  font-size: 20px;
-}
-
-.post-title h1 {
-  margin-bottom: 0.25em;
-}
-
-.ss {
-  float: right;
-
-  a {
-    color: $black;
-    font-size: 30px;
-
-    &:not(:last-child) {
-      padding-right: 10px;
-    }
-
-    &:hover {
-      color: $link;
-      @include transition(color 0.25s ease-in);
-    }
-  }
+.personal-description {
+  color: #646464;
+  font-size: 87.5%;
 }
