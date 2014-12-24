@@ -1,12 +1,7 @@
-html, body {
-  height: 100%;
-}
-
 body {
   @include regular-text;
-
-  line-height: 1;
   color: $black;
+  line-height: 1;
 }
 
 a {

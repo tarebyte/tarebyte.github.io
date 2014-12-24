@@ -16,21 +16,15 @@
   </head>
 
   <body>
-    <div class="content-wrapper">
+    <div class="container">
+      <section class="post-title">
+        <h1>{{ page.title }}</h1>
+        <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
+      </section>
 
-      <div class="container content">
-        <section class="post-title">
-          <h1>{{ page.title }}</h1>
-          <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
-        </section>
-
-        <div class="post-content">
-          {{content}}
-        </div>
-      </div>
-
-      {% include footer.html %}
-
+      <section class="post-content">
+        {{content}}
+      </section>
     </div>
   </body>
 </html>

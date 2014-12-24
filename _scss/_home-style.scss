@@ -1,80 +1,75 @@
 body {
-  @include regular-text;
-
   @include transform(translate3d(0,0,0));
-  @include animation(fade-in 3s);
-
-  line-height: 1;
-  color: $black;
-}
-
-a {
-  color: $link;
-  text-decoration: none;
-}
-
-footer {
-  border-top: 1px solid #EEE;
-
-  p {
-    @include semi-bold-text;
-
-    font-size: 12px;
-    padding-top: 20px;
-    text-align: center;
-  }
+  @include animation(fade-in 1s);
 }
 
 header {
-  text-align: center;
   color: $black;
-  margin: 15% 0 10%;
+  margin: 15% 0 8%;
+  text-align: center;
 
   h1 {
     @include light-text;
-    @include animation(drop-twenty 2s);
+    @include animation(drop-twenty 1.5s);
   }
 
   p {
+    @include animation(up-twenty 2.5s);
     color: #646464;
     font-size: 87.5%;
-    @include animation(up-twenty 3s);
+    padding-bottom: 14px;
   }
 
   ul {
-    @include span-columns(6);
-    @include shift(3);
-    @include animation(up-twenty 3s);
-
+    @include animation(up-twenty 2.5s);
     font-size: 26px;
-    list-style-type: none;
-    padding: 0;
 
     li {
-      padding: 0 2%;
-      text-align: center;
       display: inline;
+      padding: 0 15px;
 
       a {
         @include transition(color 0.25s ease-in);
         color: $gray;
 
         &:hover {
-          color: $link;
           @include transition(color 0.25s ease-in);
+          color: $link;
         }
       }
     }
   }
 }
 
-.container {
-  @include outer-container;
+.date {
+  color: $gray;
+  font-size: 14px;
 }
 
 .posts {
   @include animation(fade-in 6s);
 
   list-style-type: none;
-  padding: 0;
+  line-height: 110%;
+  padding: 0 10%;
+
+  a {
+    @include transition(color 0.25s ease-in);
+    font-size: 18px;
+    text-decoration: underline;
+
+    &:hover {
+      @include transition(color 0.25s ease-in);
+      color: darken($link, 10%);
+    }
+  }
+
+  aside {
+    border-bottom: 1px solid #F1F1F1;
+    margin: 0 0 10%;
+  }
+
+  span {
+    float: right;
+  }
 }

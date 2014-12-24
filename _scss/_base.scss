@@ -3,13 +3,29 @@
 @import "lib/normalize";
 @import "lib/bourbon/bourbon";
 
-/*== Use in development only! ==*/
-// @import 'visual-grid';
-/*==============================*/
-
-@import "grid-settings";
-@import "lib/neat/neat";
-
 @import "animations";
 @import "colors";
 @import "type";
+
+body {
+  @include regular-text;
+
+  color: $black;
+  line-height: 1;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  max-width: 650px;
+}
