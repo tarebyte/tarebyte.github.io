@@ -1,14 +1,12 @@
 # Site settings
 title: Welcome Back
 email: mark@marktareshawty.com
+
 description: >
   This is the corner of the Internet that contains Mark Tareshawty's musings
   and semi-tolerable jokes.
+
 url: "http://marktareshawty.com/" # the base hostname & protocol for your site
-github_url:  https://github.com/tarebyte
-flickr_url: https://www.flickr.com/photos/marktareshawty/
-instagram_url: http://instagram.com/tarebyte/
-twitter_url: https://twitter.com/tarebyte
 
 permalink: /posts/:title/
 
@@ -17,3 +15,13 @@ markdown: kramdown
 sass:
   sass_dir: _scss
   # style: compressed
+
+# Custom Vars
+github_url:  https://github.com/tarebyte
+flickr_url: https://www.flickr.com/photos/marktareshawty/
+instagram_url: http://instagram.com/tarebyte/
+twitter_url: https://twitter.com/tarebyte
+
+gems:
+  - jemoji
+  - jekyll-mentions
