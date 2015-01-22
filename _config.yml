@@ -4,10 +4,12 @@ permalink: /posts/:title/
 # Setup
 title: Mark Tareshawty
 url: "http://marktareshawty.com/"
+basename: ""
+
 description: >
   This is the corner of the Internet that contains Mark Tareshawty's musings
   and semi-tolerable jokes.
-basename: ""
+
 author:
   name: Mark Tareshawty
   email: mark@marktareshawty.com
@@ -20,5 +22,16 @@ sass:
 
 # Custom Vars
 github:
-  repo:           https://github.com/tarebyte/tarebyte.github.io
+  repo: https://github.com/tarebyte/tarebyte.github.io
+
+# Custom Vars
 handle: tarebyte
+github_url:  https://github.com/tarebyte
+flickr_url: https://www.flickr.com/photos/marktareshawty/
+instagram_url: http://instagram.com/tarebyte/
+twitter_url: https://twitter.com/tarebyte
+
+gems:
+  - jemoji
+  - jekyll-mentions
+
