@@ -26,10 +26,7 @@ github:
 
 # Custom Vars
 handle: tarebyte
-github_url:  https://github.com/tarebyte
 flickr_url: https://www.flickr.com/photos/marktareshawty/
-instagram_url: http://instagram.com/tarebyte/
-twitter_url: https://twitter.com/tarebyte
 
 gems:
   - jemoji
