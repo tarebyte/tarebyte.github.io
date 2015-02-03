@@ -5,12 +5,12 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
 
-@import "post_styles/base";
-@import "post_styles/type";
-@import "lib/syntax";
-@import "post_styles/code";
-@import "post_styles/layout";
-@import "post_styles/masthead";
-@import "post_styles/posts";
-@import "post_styles/pagination";
-@import "post_styles/message";
+@import "post/base";
+@import "post/type";
+@import "post/syntax";
+@import "post/code";
+@import "post/layout";
+@import "post/masthead";
+@import "post/posts";
+@import "post/pagination";
+@import "post/message";
