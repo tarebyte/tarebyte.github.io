@@ -1,6 +1,110 @@
 ---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
 ---
-@import "base";
 
-@import "home-style";
-@import "home-media-queries";
+@charset "utf-8";
+
+@import "lib/normalize";
+@import "lib/bourbon/bourbon";
+@import "lib/type";
+
+html {
+  @include regular-text;
+}
+
+body {
+  color: #333;
+  line-height: 1;
+}
+
+a {
+  color: #307EA9;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header {
+  margin: 15% 0 8%;
+  text-align: center;
+
+  h1 {
+    @include light-text;
+  }
+
+  p {
+    color: #646464;
+    font-size: 87.5%;
+    padding-bottom: 14px;
+  }
+
+  ul {
+
+    li {
+      display: inline;
+      padding: 0 15px;
+
+      a {
+        @include transition(color 0.25s ease-in);
+        color: #BBB;
+
+        &:hover {
+          @include transition(color 0.25s ease-in);
+          color: #307EA9;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  max-width: 650px;
+}
+
+.date {
+  color: #BBB;
+  font-size: 14px;
+}
+
+.post-excerpt {
+  @media(max-width: 480px) {
+    display: none;
+  }
+}
+
+.posts {
+  line-height: 200%;
+  padding: 0 10%;
+
+  a {
+    @include transition(color 0.25s ease-in);
+    font-size: 18px;
+
+    &:hover {
+      @include transition(color 0.25s ease-in);
+      color: darken(#307EA9, 10%);
+    }
+  }
+
+  span {
+    float: right;
+  }
+
+  @media(max-width: 480px) {
+    display: inline;
+
+    a {
+      font-size: 18px;
+    }
+
+    span {
+      float: right;
+    }
+  }
+}
