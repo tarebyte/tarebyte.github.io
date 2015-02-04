@@ -2,15 +2,15 @@
 # Use a comment to ensure Jekyll reads the file to be transformed into CSS later
 # only main files contain this front matter, not partials.
 ---
-
 @charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
 @import "lib/normalize";
 @import "lib/bourbon/bourbon";
-@import "lib/type";
 
 html {
-  @include regular-text;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -33,7 +33,7 @@ header {
   text-align: center;
 
   h1 {
-    @include light-text;
+    font-weight: 300;
   }
 
   p {
