@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{ "/css/post.css" | prepend: site.baseurl }}">
   </head>
   <body>
+
     <div class="container">
       <article class="post">
         <h1 class="post-title">{{ page.title }}</h1>
@@ -12,7 +13,6 @@
         {{ content }}
         {% include twitter.html %}
       </article>
-
     </div>
 
     {% include js.html %}
