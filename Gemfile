@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.1.1'
 gem 'github-pages'
 
 gem 'bourbon'
-gem 'jekyll-mentions'
-gem 'jemoji'

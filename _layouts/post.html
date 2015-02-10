@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-
+    {% include head.html %}
     <link rel="stylesheet" href="{{ "/css/post.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="/js/ss-social.js"></script>
   </head>
-
   <body>
-    <div class="container">
-      <section class="post-title">
-        <h1>{{ page.title }}</h1>
-        <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
-      </section>
 
-      <section class="post-content">
-        {{content}}
-      </section>
+    <div class="container">
+      <article class="post">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: '%B %-d, %Y' }}</time>
+        {{ content }}
+        {% include twitter.html %}
+      </article>
     </div>
+
+    {% include js.html %}
   </body>
 </html>
+
