@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/tarebyte
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://marktareshawty.com
+  * I am tarebyte (https://keybase.io/tarebyte) on keybase.
+  * I have a public key with fingerprint F716 3246 2F35 F3DC 60EF  F4BE 08A2 BC08 4602 5DA6
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "f71632462f35f3dc60eff4be08a2bc0846025da6",
+            "host": "keybase.io",
+            "key_id": "08a2bc0846025da6",
+            "kid": "0101cdc641e9519c052a2658bb48be6bd472e443a47519ce95d0cb41df44d4afdac60a",
+            "uid": "541c98f2f4a3b47bd5907170fe66ee00",
+            "username": "tarebyte"
+        },
+        "service": {
+            "hostname": "marktareshawty.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1425293537,
+    "expire_in": 157680000,
+    "prev": "fd6adf452407031ffc76529fb7be4906e20427189f9a04a8f1e490753233f3a7",
+    "seqno": 31,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtkltsTEEYx/dCu5pgSySqDXIQD5qaM2fObbsaElGCtKG2NNjOnDOzPVb3rLOn
+W6sVUg9oPTRCXFM0KkRFPNWDpOmDkEjFPZUIscQtErdGxCXMcXkzL5P5f7/vP9/3
+zXSPD/oC/lDvldCSwIYz/huvia9udOG7NoHYZk6ItAlJ+ntjVipBnbRjpVwhIjBV
+VCSIFMgkmUmmoQDKGCIUaBgSA2hIAVA2sSKUC012xsvgNgRnaIVlc40f4pbJ1f/w
+yT8BEYgG90Ui1WVRN4AMMVRkjRCkEaoQE6mQIiRhpHphDpnAIEg0GUImwszEvCbM
+7Vp+28lINHSNQYawRJBKTFkHqqgCRhWFUgA8MEOdFG6mnHaxQ0nOpcL2coGrWcug
+3gi8Tv4SzdhJelSmCbe6uQrDbuYOacd2bcPezONNrpuOeOluLu3xrZTE/zrFiZUy
++TB5QpY6GctOCRGRk4ZredYigjLUJVlSywW6NW05NG55hKwqGuDLu4ZmvScwFcy7
+lSECKpBExgxV4ZmMqIQiHSgUAgRVUdOZjgHCGhM9WZUlKElMwqrg9bYlZQsRSeR1
+4gT3zFiJVAi7LQ5vvWivv2yMzx/wFYwNeD/CVzQu/O+bfKgq/LmlvWvx49q+4+0j
+JZWdj80n92a+mlfVCFZ+Llt99ml4f3r06ZgX33qDP08VDebx++BteDMw93bZ9cFz
+z+ePbqyrWRWODryZVFtTMnXc9KVwdd3KIV/bw0h+Runua+FKlPvyaHLt275YqL9j
+0+l4lBZY7r4b9w8+O9LeUDV2aNjxw/1HaUPLvdiaZKc0xfl6/vvUk5WXGj/O6Rp5
+Fj6wp/Bu6eeGLzizfMWqWGRRcUd9fk7P7OCR4v6XJxpjFbMuTJt9tbvd7LscHliX
+2IZzE+cmQt87qtO9O0oSU3qqL37dNlhYkF/w49MdcGx4567xy9ZHD7kja7P1KybU
+D88//GDrrRNR+As=
+=VwJI
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tarebyte
+
+==================================================================
+
