@@ -7,7 +7,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
 @import "lib/normalize";
-@import "lib/bourbon/bourbon";
+
+@mixin color-transition($duration-period) {
+  -webkit-transition: color $duration-period ease-in;
+  -moz-transition:    color $duration-period ease-in;
+  -o-transition:      color $duration-period ease-in;
+  -ms-transition:     color $duration-period ease-in;
+  transition:         color $duration-period ease-in;
+
+}
 
 html {
   font-family: 'Open Sans', sans-serif;
@@ -49,11 +57,11 @@ header {
       padding: 0 15px;
 
       a {
-        @include transition(color 0.25s ease-in);
+        @include color-transition(0.25s);
         color: #BBB;
 
         &:hover {
-          @include transition(color 0.25s ease-in);
+          @include color-transition(0.25s);
           color: #307EA9;
         }
       }
@@ -83,13 +91,7 @@ header {
   padding: 0 10%;
 
   a {
-    @include transition(color 0.25s ease-in);
     font-size: 18px;
-
-    &:hover {
-      @include transition(color 0.25s ease-in);
-      color: darken(#307EA9, 10%);
-    }
   }
 
   span {
