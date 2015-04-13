@@ -1,0 +1,8 @@
+@mixin color-transition($duration-period) {
+  -webkit-transition: color $duration-period ease-in;
+  -moz-transition:    color $duration-period ease-in;
+  -o-transition:      color $duration-period ease-in;
+  -ms-transition:     color $duration-period ease-in;
+  transition:         color $duration-period ease-in;
+}
+

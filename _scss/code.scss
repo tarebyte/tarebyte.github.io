@@ -14,7 +14,6 @@ code {
   font-size: 85%;
   color: #bf616a;
   background-color: #f9f9f9;
-  border-radius: 3px;
 }
 pre {
   display: block;
@@ -26,8 +25,8 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
-  // word-wrap: break-word;
   background-color: #2b303b;
+  border-radius: 5px;
 }
 pre code {
   padding: 0;

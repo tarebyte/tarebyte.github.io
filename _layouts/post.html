@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% include head.html %}
-    <link rel="stylesheet" href="{{ "/css/post.css" | prepend: site.baseurl }}">
-  </head>
+<html lang="en-us">
+  {% include head.html %}
   <body>
+    {% include mastheads.html %}
 
     <div class="container">
       <article class="post">
         <h1 class="post-title">{{ page.title }}</h1>
-        <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date: '%B %-d, %Y' }}</time>
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date: '%B %-d, %Y' }}</time>
         {{ content }}
         {% include twitter.html %}
       </article>

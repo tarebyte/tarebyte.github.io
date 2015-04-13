@@ -2,12 +2,12 @@
 //
 // Update the foundational and global aspects of the page.
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -21,7 +21,7 @@ html {
   font-size: 16px;
   line-height: 1.6;
 
-  @media (min-width: 38em) {
+  @media (min-width: 820px) {
     font-size: 20px;
   }
 }
@@ -31,18 +31,19 @@ body {
   background-color: #fff;
   margin-top: 2%;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 // No `:visited` state is required by default (browsers will use `a`)
 a {
+  @include color-transition(0.25s);
   color: #307ea9;
   text-decoration: none;
 
-  // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
   &:focus {
-    text-decoration: underline;
+    @include color-transition(0.20s);
+    color: lighten(#307ea9, 10%);
   }
 
   strong {
@@ -65,11 +66,13 @@ table {
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
 }
+
 td,
 th {
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid #e5e5e5;
 }
+
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
