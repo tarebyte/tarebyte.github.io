@@ -3,6 +3,24 @@
 // Each post is wrapped in `.post` and is used on default and post layouts. Each
 // page is wrapped in `.page` and is only used on the page layout.
 
+// List of all posts on the homepage
+.posts {
+  list-style-type: none;
+  padding: 0px;
+
+  ul {
+    padding: 0px;
+    list-style: none;
+  }
+
+  li {
+    .date {
+      color: #BBB;
+      float: right;
+    }
+  }
+}
+
 .page,
 .post {
   margin-bottom: 4em;
@@ -14,19 +32,38 @@
 .post-title a {
   color: #303030;
 }
+
 .page-title,
 .post-title {
+  text-align: center;
   margin-top: 0;
 }
 
 // Meta data line below post title
-.post-date {
+.page-date {
   display: block;
   margin-top: -.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.25em;
   color: #9a9a9a;
+  text-align: center;
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 2.25em;
+  color: #9a9a9a;
+  text-align: center;
 }
 
+.post-date {
+  color: #9a9a9a;
+  float: right;
+  padding-top: 4px;
+
+  font-size: 12px;
+
+  @media (min-width: 820px) {
+    font-size: 16px;
+  }
+}
 
 // Related posts
 .related {
@@ -58,4 +95,9 @@
       }
     }
   }
+}
+
+// Years
+.current-year {
+  border-bottom: 1px solid rgba(144, 144, 144, 0.25);
 }
