@@ -1,10 +1,6 @@
-# My Little Corner of the Interwebz
+# My personal site
 
-## Start Hacking
+## Start hacking
 ```
-# Install the deps
-bundle install
-
-# Run the server
-jeykll server
+script/server
 ```
