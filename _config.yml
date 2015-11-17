@@ -31,3 +31,8 @@ gems:
   - jemoji
   - jekyll-mentions
 
+exclude:
+  - script
+  - Gemfile
+  - Gemfile.lock
+  - vendor
