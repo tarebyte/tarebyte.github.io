@@ -1,4 +1,8 @@
-_drafts
+.DS_Store
+.jekyll-assets-cache
 _site
 .sass-cache
 vendor/gems
+.bundle
+bin
+tmp

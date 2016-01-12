@@ -1,35 +1,22 @@
 # Permalink
 permalink: /posts/:title/
 
-# Setup
-title: Mark Tareshawty
-url: "http://marktareshawty.com"
-basename: ""
-
-description: >
-  My little corner of the internet
+name: marktareshawty.com
+url: http://marktareshawty.com
 
 author:
   name: Mark Tareshawty
   email: mark@marktareshawty.com
 
-# Build settings
-markdown: kramdown
+markdown: redcarpet
 sass:
   sass_dir: _scss
   style: compressed
 
-# Custom Vars
-github:
-  repo: https://github.com/tarebyte/tarebyte.github.io
-
-# Custom Vars
-handle: tarebyte
-flickr_url: https://www.flickr.com/photos/marktareshawty/
-
 gems:
   - jemoji
   - jekyll-mentions
+  - jekyll-feed
 
 exclude:
   - script
