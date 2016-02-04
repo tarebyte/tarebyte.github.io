@@ -8,7 +8,6 @@ author:
   name: Mark Tareshawty
   email: mark@marktareshawty.com
 
-markdown: redcarpet
 sass:
   sass_dir: _scss
   style: compressed
