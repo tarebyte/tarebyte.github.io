@@ -13,6 +13,7 @@ To do so, I am signing this object:
 {
     "body": {
         "key": {
+            "eldest_kid": "0101acf57cde22ebdd0f57b8f43684097c14cb7d89cbb3195149deca867704e342760a",
             "fingerprint": "06c80d06624775acbf0159e028dd1c473bf9d1ae",
             "host": "keybase.io",
             "key_id": "28dd1c473bf9d1ae",
@@ -27,10 +28,10 @@ To do so, I am signing this object:
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1425295770,
+    "ctime": 1458305953,
     "expire_in": 157680000,
-    "prev": "76f7630bbcafdba0230caa2cae8c4e085602a66fffc00ee26b61352334711e69",
-    "seqno": 34,
+    "prev": "853b05a5df2ba218346d0d812c96c8cb6eccb188060e3727ebaec9efdc4cae99",
+    "seqno": 38,
     "tag": "signature"
 }
 
@@ -38,23 +39,23 @@ which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
 
-owFtkmlIVUEUx9+z7SkkLUIpCnqhBXrVzF1m7n1FiwhSpPRBKomymblzfVd77z7v
-u1piZRglflDasEWkgig0EiqjL4UYtGiLFUSbEhIVCUVFiyFGc6W+NV+Gc87v/Gf+
-h3Nw+qRASnDhUHbhsl+Pu4L3PtBAybc1Z+ok6pi1UqROquQTl2XHy7mbcO24J0Uk
-gJgOTICQrGKsEUYtADWDA1k3TchUrFDLMCHhUliKOkm/Q8hQkuRLbEfkRFBmmyL7
-H75yogAggIRZGmYml2VOTROIgOqWqiBdBQZmUGUUm7rBKFWgoUHVMDkjOsIYqFxR
-ZYwAEXLVE3KaCpmhW7KlEoWqmJqaATDEwOIIcQ6ADya5GycxLmiPuJzWelzaHZZE
-tsZm3B+B7+QvESNupU8lo2SHV7uEOTGhkHAdz2HOdlGPel4i4rd7tQmf38Fp2V+l
-MmrHTTFM0VDD3aTtxKUIFCTzbF8aqrImG5pwEZb4zoTt8jLbJzSMdCCO/wyvEZIY
-WRgpgFJGLJMSICuAESIzwnWmcqBrCMgEIcuyGACcy4giqGiyoqgYQo4MyfdWFXek
-iKKKf5JyoZm0y+Mh4lW7wnpaUzB7ciCYEpg6JcXfiEBa6ox/a1IxJxQ4NoyvbAqt
-gnntLVMbV37qbi7qGT6h9B3NnLn/ZX7sQcamO21jy/uXX/zSVHTw5KGB8611Vd+N
-Y6MPb8c6Q7C0ONaaPaJPa8hcldazfbYa5l2D1cefb9va8aaEFHit5/eGez+1wPLx
-RRcOa2sf5E5ec+RU7qvg5p8b2wdI5vpnt9anLj23sar/2orXl+Y/WYEqW2P364vH
-VkdfDBd+zH93dvx397KCx/Ubvm5Jj+7ftzieFsorLur5ePL0HvPtrhOlHY+SzTey
-KkafZqQPvVuXY/7IOZcEl29mlVztq7nfAHPvFl5vbJw7uPbAuq426X1WRaxkpGBe
-SJkVXSD1fvla8LmzavbAHw==
-=b5MS
+owGtkltIVEEYx3fXLlQEdrELLEGHiIytZs79bKmVphFl9SJBstvcjp7Uc9azp1Ux
+yUgswcgyMoosn5IKg3wRArMSKyIsumcFEV3M6qV6iKhtjtRbj83L8H3z+/7z/2a+
+tukZgVBwyYtw0crv93qCt0dxoGTsx0C9gB1aJ0TrhQo2vrFKypJevMKiQlQAEEBE
+TEUjlIkiw5QCHmDdlCVVl4GhESgTrFHdIBhL0FCgbFBGkK5qGpCZJIuaCpAQEUzL
+LmNuwrVsz5dViQ4oUFVR1jQFEWwCqBgMiDqlkMiahE2DQsR4YbmT9Cu4OYySbLnl
+8BwP4uP2/sH/Z9+7xuUUGRJDN0VTRhKWNUwVA2hQAyZTVcYA8MEkc21UxTjtIZfh
+Oo8JDRGBZ1MWYf7D+p38IaqQW+FTyXJU49UtJ04VV0i4jucQp5Kfl3teIuqXe3UJ
+n69hOP5HKY4tm/LH5AUp5iYtxxaikJPEs3xpKCu6BBRDkSICq01YLotbPqFoqg74
+8q9hKS6pKzEJAwUp1BQxEqEuySoFVIciMfjvEKwyQjDUdaACJmmixjBixGAmJTJB
+zDAEv7lq2xGiks6NojIumrTKbOTtcnnrU1uC4QmBYCgwaWLIn7PA1CmZf4ev88Lk
+dGxzwQd8L9S7urpxa//CZaNCl9Ht9F/fu2xt8fo9BeGDHYUjo/mXq5NfU42fb7An
+GW3teYN9Ox+eyj89Nti5TnqcE/tUsPN8dmyo8GiqYVj6smVFQj/8tLDUKrlfndeH
+h1pnzzn5cta+MyXtMHeC01uZ1Zodnty1YHDOgdTIu3DOiu3wyIZbv0ZeJZozrpx7
++OVBZHvRpqvTtn0cGm56XTLtYlfoWVdu47GamxV35mYJH5tCM/PTpZGys60Du1vf
+vA1vTL0g3cd3gEG7tjn3kXp6TePYufkdPxfv3R/NTPcuDJxY1G9c63nvtQgvvz3P
+mTHvUqrmUHpVcbEdZD9GHy9NX777Gw==
+=483V
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -63,4 +64,3 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/tarebyte
 
 ==================================================================
-
