@@ -1,0 +1,53 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui;
+
+  --color-canvas: #eff1f5;
+  --color-foreground: #4c4f69;
+  --color-muted: #6c6f85;
+  --color-link: #1e66f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-canvas: #1e1e2e;
+    --color-foreground: #cdd6f4;
+    --color-muted: #bac2de;
+    --color-link: #89b4fa;
+  }
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-foreground);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--color-link);
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  text-align: center;
+}
+
+h1 {
+  color: var(--color-foreground);
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin: 0;
+}
+
+.given-name {
+  font-weight: 300;
+}
+
+.role {
+  color: var(--color-muted);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
